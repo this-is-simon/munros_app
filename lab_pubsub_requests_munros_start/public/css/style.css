@@ -1,0 +1,22 @@
+body {
+  height: 100vh;
+}
+
+#munro-list {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 20px;
+}
+
+.munro-detail {
+  border: 1px solid grey;
+  max-width: 200px;
+  flex-grow: 1;
+}
+
+.munro-detail h2 {
+  padding: 10px;
+}

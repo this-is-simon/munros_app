@@ -21,7 +21,7 @@ munroListView.prototype.renderMunroViews = function(allMunroData) {
 
 munroListView.prototype.createMunroListItem = function(munro) {
   const munroDetailView = new MunroDetailView();
-  const munroDetail = munroDetailView.createMunroHeader(munro);
+  const munroDetail = munroDetailView.createMunroInfo(munro);
   return munroDetail;
 }
 
