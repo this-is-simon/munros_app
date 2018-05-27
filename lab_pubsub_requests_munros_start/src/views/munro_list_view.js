@@ -1,4 +1,5 @@
 const PubSub = require('../helpers/pub_sub');
+const MunroDetailView = require('./munro_detail_view')
 
 const munroListView = function(container){
   this.container = container;
@@ -18,7 +19,11 @@ munroListView.prototype.renderMunroViews = function(allMunroData) {
   })
 }
 
-
+munroListView.prototype.createMunroListItem = function(munro) {
+  const munroDetailView = new MunroDetailView();
+  const munroDetail = munroDetailView.createMunroHeader(munro);
+  return munroDetail;
+}
 
 
 
