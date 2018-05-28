@@ -5,16 +5,17 @@ body {
 #munro-list {
   border: 2px solid black;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
+  flex: 1;
   align-content: center;
   padding: 20px;
 }
 
 .munro-detail {
   border: 1px solid grey;
-  max-width: 200px;
   flex-grow: 1;
+  margin: 5px;
 }
 
 .munro-detail h2 {
